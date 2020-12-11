@@ -14,6 +14,6 @@ const myndexSchema = new mongoose.Schema({
   startDate: Date
 }, {timestaps: true})
 
-const Index = mongoose.model('Index', myndexSchema);
+const Myndex = mongoose.model('Myndex', myndexSchema);
 
-module.exports = Index;
+module.exports = Myndex;

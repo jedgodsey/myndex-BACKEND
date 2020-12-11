@@ -19,3 +19,7 @@ module.exports = {
   Myndex: require('./myndex'),
   User: require('./User')
 }
+
+
+//2020-12-11T05:58:06.187536+00:00 heroku[web.1]: Process exited with status 143
+//2020-12-11T05:58:06.187536+00:00 heroku[web.1]: Process exited with status 143

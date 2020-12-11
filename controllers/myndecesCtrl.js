@@ -3,6 +3,7 @@ const passport = require('passport');
 const db = require("../models");
 
 const display = (req, res, next) => { // why next?
+  console.log('in myndecesCtrl-display')
   passport.authenticate('local', (err, user, info) => {
     db.Myndex.find({})
     .then(foundIndeces => {
@@ -61,6 +62,7 @@ const update = (req, res) => {
 };
 
 const destroy = (req, res) => {
+  console.log('in myndecesCtrl-destroy')
   db.Myndex.findByIdAndDelete(req.params.id)
     .then(deletedMyndex => res.json({index: deletedMyndex}))
     .catch(err => {

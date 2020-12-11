@@ -43,8 +43,8 @@ app.use("/myndeces", routes.myndeces);
 app.use("/users", routes.users);
 
 app.post('/login', (req, res, next) => { // why next?
+  console.log('in server-login')
   passport.authenticate('local', (err, user, info) => {
-    console.log('top user: ', user)
     if (err) throw err;
     if (!user) res.send('no user exists');
     else {
